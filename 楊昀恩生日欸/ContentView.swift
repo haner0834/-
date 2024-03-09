@@ -26,11 +26,6 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Button("push notification") {
-                let date = DateComponents(month: 2, day: 24, hour: 20, minute: 25)
-                viewModel.pushNotification(on: date, title: "test", body: "hello", id: "testingId")
-            }
-            
             if isAbleToShowGreeting {
                 if !isTapped {
                     BirthdayCard(isTapped: $isTapped)

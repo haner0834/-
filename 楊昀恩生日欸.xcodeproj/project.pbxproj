@@ -157,10 +157,7 @@
 				42398B352B863661004E9857 /* Tips.swift */,
 				42398B392B88E992004E9857 /* UserDefaultKeys.swift */,
 				42398B332B86232A004E9857 /* NonsenseContext.swift */,
-				4281596A2B6F669C0027DC8A /* BirthdayCard.swift */,
-				4281596C2B6FC8F20027DC8A /* CardContent.swift */,
-				428159B42B71EC100027DC8A /* CardContext.swift */,
-				4281596E2B6FC92E0027DC8A /* CardContentItem.swift */,
+				42D43A452B9CB08E00111F7F /* Card */,
 				42D0178D2B6F545100B9AA82 /* ViewModel */,
 				42D017812B6F36CC00B9AA82 /* Assets.xcassets */,
 				42D017832B6F36CC00B9AA82 /* Preview Content */,
@@ -183,6 +180,17 @@
 				42398B372B863CA5004E9857 /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		42D43A452B9CB08E00111F7F /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				4281596A2B6F669C0027DC8A /* BirthdayCard.swift */,
+				4281596C2B6FC8F20027DC8A /* CardContent.swift */,
+				428159B42B71EC100027DC8A /* CardContext.swift */,
+				4281596E2B6FC92E0027DC8A /* CardContentItem.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
