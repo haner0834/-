@@ -11,3 +11,5 @@ Because I gave her this before her birthday about 3 to 5 days, so I create a cou
 and when she tap the screen, there'll appear some nonsense on the screen  
 When her birthday comes, the envelope will appear on the screen, and I added some animation when envelope is opened  
 After envelope was opened, the text that I want to say will appear on the screen one by one.  
+This is the envelope below: 
+![image](https://github.com/haner0834/HerBirthdayGift/blob/main/Simulator%20Screenshot%20-%20iPhone%2013%20-%202024-03-10%20at%2014.03.20.png)
