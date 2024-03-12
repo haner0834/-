@@ -7,9 +7,9 @@ This app cannot upload to AppStore(they saied the app is not popular enough), so
 The way is that I added her to my app test group and let her download TestFlight, so she can download the app on TestFlight and not AppStore  
   
 ## App Content  
-Because I gave her this earlier than her birthday about 3 to 5 days, so I create a countdown clock to show up how many times left to her birthday  
-and when she tap the screen, there'll appear some nonsense on the screen  
-When her birthday comes, the envelope will appear on the screen, and I added some animation when envelope is opened  
-After envelope was opened, the text that I want to say will appear on the screen one by one.  
+Because I gave her this earlier than her birthday about 3 to 5 days, so I created a countdown clock to show up how many days left to her birthday  
+and when she taps the screen, there'll appear some nonsense on the screen  
+When her birthday comes, the envelope will appear on the screen, and I added some animations when envelope flap was opened  
+After envelope was opened, what I want to say will appear on the screen one by one.  
 This is the envelope below: 
 ![image](https://github.com/haner0834/HerBirthdayGift/blob/main/Simulator%20Screenshot%20-%20iPhone%2013%20-%202024-03-10%20at%2014.03.20.png)
