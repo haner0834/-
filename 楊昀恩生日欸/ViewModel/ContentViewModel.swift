@@ -23,7 +23,7 @@ extension ContentView {
         }
         
         func sendNotificatonOnHerBD() {
-            let herBirthday = DateComponents(year: 2024, month: 2, day: 25, hour: 0, minute: 0, second: 0)
+            let herBirthday = DateComponents(year: 2025, month: 2, day: 25, hour: 0, minute: 0, second: 0)
             
             let content = UNMutableNotificationContent()
                 content.title = "林禹澔"
@@ -58,8 +58,9 @@ extension ContentView {
             
             sendNotificatonOnHerBD()
             let key = UserDefaultKeys.notificationPushTimes
-            let pushTimes = UserDefaults.standard.integer(forKey: key)
-            UserDefaults.standard.set(pushTimes + 1, forKey: key)
+            let userDefault = UserDefaults.standard
+            let pushTimes = userDefault.integer(forKey: key)
+            userDefault.set(pushTimes + 1, forKey: key)
             
             let examDay = DateComponents(year: 2024, month: 2, day: 22, hour: 5, minute: 30, second: 0)
             pushNotification(on: examDay, title: "誰ㄚ那麼有心還傳這個", body: "模考好玩嗎:D", id: "mockExam")

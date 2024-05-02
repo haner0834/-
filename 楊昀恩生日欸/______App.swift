@@ -12,7 +12,7 @@ import TipKit
 struct ______App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Home()
                 .environmentObject(GlobalViewModel())
                 .task {
                     try? Tips.configure([

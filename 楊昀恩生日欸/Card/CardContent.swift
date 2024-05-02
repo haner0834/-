@@ -17,18 +17,32 @@ struct CardContent: View {
     static let key = UserDefaultKeys.cardVisitTimes
     let visitTimes = UserDefaults.standard.integer(forKey: key)
     
-    let card = CardContext()
+    var card = CardContext()
+    let contentType: ContextType
+    
+    init(isTapped: Binding<Bool>, forContent contentType: ContextType = .defaultContent) {
+        _isTapped = isTapped
+        let key = UserDefaultKeys.cardVisitTimes
+        let visitTimes = userDefault.integer(forKey: key)
+        if visitTimes >= 10 && visitTimes < 12 {
+            self.contentType = .contentAfterVisit10Times
+            card = CardContext(contextType: .contentAfterVisit10Times)
+        }else {
+            self.contentType = contentType
+            card = CardContext(contextType: contentType)
+        }
+    }
     
     var body: some View {
         ZStack {
             VStack {
-                let count: Int = visitTimes >= 10 && visitTimes < 12 ? card.contentAfterVisit10Times.count: card.content.count
+                let count = card.content.count
                 
                 ForEach(0..<count, id: \.self) { i in
-                    let content = visitTimes >= 10 && visitTimes < 12 ? card.contentAfterVisit10Times[i]: card.content[i]
+                    let content = card.content[i]
                     
                     if tapTimes >= i && tapTimes < i + 1 {
-                        Text(content.text)
+                        Text(.init(content.text))
                             .font(.title)
                             .bold()
                             .transition(
@@ -40,8 +54,9 @@ struct CardContent: View {
                             image
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(maxHeight: 400)
+                                .frame(maxWidth: 400)
                                 .clipShape(RoundedRectangle(cornerRadius: 16.0))
+                                .padding(.horizontal)
                         }
                     }
                 }
@@ -52,10 +67,10 @@ struct CardContent: View {
             
             VStack {
                 HStack(spacing: 0) {
-                    Color.black.opacity(visitTimes >= 10 && visitTimes < 12 ? 0.001: (tapTimes == 1 ? 0.3: 0.001))
+                    Color.black.opacity(card.contextType == .defaultContent ? (tapTimes == 1 ? 0.3: 0.001): 0.001)
                         .onTapGesture(perform: processBack)
                     
-                    Color.black.opacity(visitTimes >= 10 && visitTimes < 12 ? 0.001: (tapTimes == 2 ? 0.3: 0.001))
+                    Color.black.opacity(card.contextType == .defaultContent ? (tapTimes == 2 ? 0.3: 0.001): 0.001)
                         .onTapGesture(perform: processContinue)
                 }
                 .ignoresSafeArea(edges: .all)
@@ -86,33 +101,27 @@ struct CardContent: View {
     }
     
     func processContinue() {
-        let canShowOtherContent: Bool = visitTimes >= 10 && visitTimes < 12
         withAnimation {
             isBack = false
             tapTimes += 1
             
-            let count = (canShowOtherContent ? card.contentAfterVisit10Times: card.content).count
+            let count = card.content.count
             isTapped = tapTimes <= count - 1
             if tapTimes <= count - 1 {
-                if canShowOtherContent,
-                   let isShowButton = card.contentAfterVisit10Times[tapTimes].isShowButton {
-                    isShowBackButton = isShowButton
-                }else if let isShowButton = card.content[tapTimes].isShowButton {
-                    isShowBackButton = isShowButton
+                if let isShowButtom = card.content[tapTimes].isShowButton {
+                    isShowBackButton = isShowButtom
                 }
             }
         }
     }
     
     func processBack() {
-        let canShowOtherContent: Bool = visitTimes >= 10 && visitTimes < 12
         withAnimation {
             isBack = tapTimes == 0 ? false: true
             tapTimes -= tapTimes == 0 ? -1: 1
             isTapped = tapTimes != 0
-            if let isShowButton = (canShowOtherContent ?
-                                   card.contentAfterVisit10Times[tapTimes].isShowButton:
-                                    card.content[tapTimes].isShowButton) {
+            
+            if let isShowButton = card.content[tapTimes].isShowButton {
                 isShowBackButton = isShowButton
             }
         }
@@ -129,7 +138,7 @@ extension Array where Element == CardContentItem {
 }
 
 #Preview {
-    CardContent(isTapped: .constant(false))
+    CardContent(isTapped: .constant(false), forContent: .graduateGreeting)
 }
 
 #Preview {

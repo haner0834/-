@@ -24,12 +24,21 @@
 		4281598A2B6FE3AD0027DC8A /* HappyBirthdayExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 428159762B6FE3AA0027DC8A /* HappyBirthdayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		428159B52B71EC100027DC8A /* CardContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428159B42B71EC100027DC8A /* CardContext.swift */; };
 		428159B92B738B2C0027DC8A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 428159B82B738B2C0027DC8A /* Launch Screen.storyboard */; };
+		42A360FF2BDE75C40076D496 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A360FE2BDE75C40076D496 /* HomeViewModel.swift */; };
+		42C46CD82BD01C670018DC4D /* OpenableBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C46CD72BD01C670018DC4D /* OpenableBookView.swift */; };
+		42C46CDB2BD021A20018DC4D /* ImageNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C46CDA2BD021A20018DC4D /* ImageNames.swift */; };
+		42C46CDD2BD402DF0018DC4D /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C46CDC2BD402DF0018DC4D /* BookView.swift */; };
+		42C46CDF2BD4DFFF0018DC4D /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C46CDE2BD4DFFF0018DC4D /* BookViewModel.swift */; };
+		42C46CE12BD5010E0018DC4D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C46CE02BD5010E0018DC4D /* Home.swift */; };
+		42C46CE32BD56AA80018DC4D /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C46CE22BD56AA80018DC4D /* Notifications.swift */; };
+		42C46CE52BD93C620018DC4D /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C46CE42BD93C620018DC4D /* HomeModel.swift */; };
 		42D0177E2B6F36CA00B9AA82 /* ______App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0177D2B6F36CA00B9AA82 /* ______App.swift */; };
 		42D017802B6F36CA00B9AA82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0177F2B6F36CA00B9AA82 /* ContentView.swift */; };
 		42D017822B6F36CC00B9AA82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D017812B6F36CC00B9AA82 /* Assets.xcassets */; };
 		42D017852B6F36CC00B9AA82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D017842B6F36CC00B9AA82 /* Preview Assets.xcassets */; };
 		42D0178C2B6F375A00B9AA82 /* WaitingForBirthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0178B2B6F375A00B9AA82 /* WaitingForBirthday.swift */; };
 		42D0178F2B6F546A00B9AA82 /* WaitingForBirthdayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D0178E2B6F546A00B9AA82 /* WaitingForBirthdayViewModel.swift */; };
+		42D34D4B2BCEC38F00542056 /* OpenableBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D34D4A2BCEC38F00542056 /* OpenableBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +85,14 @@
 		428159B42B71EC100027DC8A /* CardContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardContext.swift; sourceTree = "<group>"; };
 		428159B82B738B2C0027DC8A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		428159BA2B7492400027DC8A /* 楊昀恩生日欸.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "楊昀恩生日欸.entitlements"; sourceTree = "<group>"; };
+		42A360FE2BDE75C40076D496 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		42C46CD72BD01C670018DC4D /* OpenableBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenableBookView.swift; sourceTree = "<group>"; };
+		42C46CDA2BD021A20018DC4D /* ImageNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNames.swift; sourceTree = "<group>"; };
+		42C46CDC2BD402DF0018DC4D /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		42C46CDE2BD4DFFF0018DC4D /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		42C46CE02BD5010E0018DC4D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		42C46CE22BD56AA80018DC4D /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		42C46CE42BD93C620018DC4D /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		42D0177A2B6F36CA00B9AA82 /* 楊昀恩生日.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "楊昀恩生日.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D0177D2B6F36CA00B9AA82 /* ______App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "______App.swift"; sourceTree = "<group>"; };
 		42D0177F2B6F36CA00B9AA82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +100,7 @@
 		42D017842B6F36CC00B9AA82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		42D0178B2B6F375A00B9AA82 /* WaitingForBirthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingForBirthday.swift; sourceTree = "<group>"; };
 		42D0178E2B6F546A00B9AA82 /* WaitingForBirthdayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingForBirthdayViewModel.swift; sourceTree = "<group>"; };
+		42D34D4A2BCEC38F00542056 /* OpenableBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenableBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +145,19 @@
 			path = HappyBirthday;
 			sourceTree = "<group>";
 		};
+		42C46CD92BD021180018DC4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42398B352B863661004E9857 /* Tips.swift */,
+				42398B392B88E992004E9857 /* UserDefaultKeys.swift */,
+				42398B332B86232A004E9857 /* NonsenseContext.swift */,
+				42C46CDA2BD021A20018DC4D /* ImageNames.swift */,
+				42C46CE22BD56AA80018DC4D /* Notifications.swift */,
+				42C46CE42BD93C620018DC4D /* HomeModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		42D017712B6F36CA00B9AA82 = {
 			isa = PBXGroup;
 			children = (
@@ -153,10 +184,10 @@
 				42D0177D2B6F36CA00B9AA82 /* ______App.swift */,
 				428159B82B738B2C0027DC8A /* Launch Screen.storyboard */,
 				42D0177F2B6F36CA00B9AA82 /* ContentView.swift */,
+				42C46CE02BD5010E0018DC4D /* Home.swift */,
 				42D0178B2B6F375A00B9AA82 /* WaitingForBirthday.swift */,
-				42398B352B863661004E9857 /* Tips.swift */,
-				42398B392B88E992004E9857 /* UserDefaultKeys.swift */,
-				42398B332B86232A004E9857 /* NonsenseContext.swift */,
+				42C46CD92BD021180018DC4D /* Models */,
+				42D34D492BCEC37100542056 /* Book */,
 				42D43A452B9CB08E00111F7F /* Card */,
 				42D0178D2B6F545100B9AA82 /* ViewModel */,
 				42D017812B6F36CC00B9AA82 /* Assets.xcassets */,
@@ -178,8 +209,20 @@
 			children = (
 				42D0178E2B6F546A00B9AA82 /* WaitingForBirthdayViewModel.swift */,
 				42398B372B863CA5004E9857 /* ContentViewModel.swift */,
+				42C46CDE2BD4DFFF0018DC4D /* BookViewModel.swift */,
+				42A360FE2BDE75C40076D496 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		42D34D492BCEC37100542056 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				42D34D4A2BCEC38F00542056 /* OpenableBook.swift */,
+				42C46CD72BD01C670018DC4D /* OpenableBookView.swift */,
+				42C46CDC2BD402DF0018DC4D /* BookView.swift */,
+			);
+			path = Book;
 			sourceTree = "<group>";
 		};
 		42D43A452B9CB08E00111F7F /* Card */ = {
@@ -307,17 +350,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				42D0178C2B6F375A00B9AA82 /* WaitingForBirthday.swift in Sources */,
+				42C46CE32BD56AA80018DC4D /* Notifications.swift in Sources */,
+				42C46CD82BD01C670018DC4D /* OpenableBookView.swift in Sources */,
 				42398B362B863661004E9857 /* Tips.swift in Sources */,
 				4281596B2B6F669C0027DC8A /* BirthdayCard.swift in Sources */,
+				42C46CE12BD5010E0018DC4D /* Home.swift in Sources */,
 				42D017802B6F36CA00B9AA82 /* ContentView.swift in Sources */,
 				428159B52B71EC100027DC8A /* CardContext.swift in Sources */,
+				42C46CE52BD93C620018DC4D /* HomeModel.swift in Sources */,
+				42D34D4B2BCEC38F00542056 /* OpenableBook.swift in Sources */,
 				42398B342B86232A004E9857 /* NonsenseContext.swift in Sources */,
 				4281596D2B6FC8F20027DC8A /* CardContent.swift in Sources */,
 				42398B382B863CA5004E9857 /* ContentViewModel.swift in Sources */,
+				42C46CDF2BD4DFFF0018DC4D /* BookViewModel.swift in Sources */,
 				42398B3A2B88E992004E9857 /* UserDefaultKeys.swift in Sources */,
 				42D0177E2B6F36CA00B9AA82 /* ______App.swift in Sources */,
+				42A360FF2BDE75C40076D496 /* HomeViewModel.swift in Sources */,
 				42D0178F2B6F546A00B9AA82 /* WaitingForBirthdayViewModel.swift in Sources */,
 				4281596F2B6FC92E0027DC8A /* CardContentItem.swift in Sources */,
+				42C46CDB2BD021A20018DC4D /* ImageNames.swift in Sources */,
+				42C46CDD2BD402DF0018DC4D /* BookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
